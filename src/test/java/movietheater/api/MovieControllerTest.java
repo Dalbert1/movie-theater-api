@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.micronaut;
+package movietheater.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -28,7 +28,7 @@ import org.junit.jupiter.api.Test;
 import jakarta.inject.Inject;
 
 @MicronautTest // <1>
-public class HelloControllerTest {
+public class MovieControllerTest {
 
     @Inject
     @Client("/")  // <2>

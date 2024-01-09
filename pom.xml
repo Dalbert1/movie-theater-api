@@ -20,7 +20,7 @@
     <micronaut.aot.enabled>false</micronaut.aot.enabled>
     <micronaut.aot.packageName>example.micronaut.aot.generated</micronaut.aot.packageName>
     <micronaut.runtime>netty</micronaut.runtime>
-    <exec.mainClass>example.micronaut.Application</exec.mainClass>
+    <exec.mainClass>movietheater.api.Application</exec.mainClass>
   </properties>
 
   <repositories>
