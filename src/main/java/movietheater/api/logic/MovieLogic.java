@@ -1,7 +1,13 @@
 package movietheater.api.logic;
 
+import movietheater.api.model.Movie;
+import movietheater.api.persistence.MovieDAO;
+
 public class MovieLogic {
-    public String getMovieListings(String dayOfWeek) {
-        return "Star Wars: The Empire Strikes Bike, Indiana Jones and The Temple of Doom, Donnie Darko, Interstellar";
+
+    private final MovieDAO movieDAO = new MovieDAO();
+
+    public Movie getMovieListings(String dayOfWeek) {
+        return movieDAO.getMoviesDayOfWeek(dayOfWeek);
     }
 }
